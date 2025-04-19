@@ -12,7 +12,8 @@ from utils import Logger
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
 
-pandarallel.initialize()
+# pandarallel.initialize()
+pandarallel.initialize(use_memory_fs=False)
 
 warnings.filterwarnings('ignore')
 
