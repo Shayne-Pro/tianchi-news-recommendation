@@ -179,7 +179,7 @@ def gen_sub(prediction):
 
     all_articles = set(prediction['article_id'].values)
 
-    sub_sample = pd.read_csv('../tcdata/testB_click_log_Test_B.csv')
+    sub_sample = pd.read_csv('../tcdata/sample_submit.csv')
     test_users = sub_sample.user_id.unique()
 
     n_split = max_threads
